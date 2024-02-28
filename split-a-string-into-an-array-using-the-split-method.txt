@@ -1,0 +1,10 @@
+function splitify(str) {
+  // Only change code below this line
+return str.split(/\W/);
+
+  // Only change code above this line
+}
+
+//Simply split the string to create a new array of words.A simple regular expression can be used to achieve this result./\W/ Matches any non-word character. This includes spaces and punctuation, but not underscores. It’s equivalent to /[^A-Za-z0-9_]/
+
+splitify("Hello World,I-am code");

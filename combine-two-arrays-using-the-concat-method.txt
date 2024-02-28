@@ -1,0 +1,12 @@
+function nonMutatingConcat(original, attach) {
+  // Only change code below this line
+return original.concat(attach);
+
+  // Only change code above this line
+}
+
+//The concat method is used to join two or more arrays or strings.This method does not mutate the existing arrays, but returns a new array.
+
+const first = [1, 2, 3];
+const second = [4, 5];
+nonMutatingConcat(first, second);

@@ -1,0 +1,18 @@
+function add(x) {
+  // Only change code below this line
+return function(y) {
+    return function(z) {
+      return x + y + z;
+    };
+  };
+
+  // Only change code above this line
+}
+
+//You can also solve as so: return y => z => x + y + z;
+
+//Use currying to return a function which accepts a function as a parameter. Each function should accept one parameter, and the third-most should return the sum of each paramater.
+
+//Within the add function, return a function which returns a function, which returns the addition of three parameters (one from each function).
+
+add(10)(20)(30);

@@ -1,0 +1,12 @@
+Array.prototype.myMap = function(callback) {
+  const newArray = [];
+  // Only change code below this line
+this.forEach((element, index, originalArr) =>
+    newArray.push(callback(element, index, originalArr))
+  );
+  // Only change code above this line
+
+  return newArray;
+};
+
+//Solve this challenge using this and the forEach method.The this keyword gives us access to the object we are calling myMap on.From there we can use the forEach method to add elements to already declared empty array as we modify each element with the given callback method.

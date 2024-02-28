@@ -1,0 +1,15 @@
+const squareList = arr => {
+  // Only change code below this line
+ return arr
+          .filter(num => num > 0 && num % parseInt(num) === 0)
+          .map(num => Math.pow(num, 2));
+
+  // Only change code above this line
+};
+
+//You will need to filter() the realNumberArray for positive integers (decimals are not integers).You will need to map() the values from your filter() function to the variable squaredIntegers.Remember the help of chaining functions.
+
+//Uses the operator filter() and map() functions to square all positive integers in a given array.
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);

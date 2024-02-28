@@ -1,0 +1,12 @@
+function alphabeticalOrder(arr) {
+  // Only change code below this line
+
+  return arr.sort(function(a, b) {
+    return a === b ? 0 : a < b ? -1 : 1;
+  });
+  // Only change code above this line
+}
+
+//You need to use a “compare function” as the callback function of the sort method.For example, the following is how you would sort an array in reverse alphabetical order.
+
+alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
